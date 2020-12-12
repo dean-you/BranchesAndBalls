@@ -11,7 +11,7 @@ namespace BranchesAndBalls
                 Console.Write("Please input the tree structure level: ");
                 var level = 0;
                 var input= Console.ReadLine();
-                if (int.TryParse(input, out level))
+                if (int.TryParse(input, out level) && (level >=1))
                 {
                     var system = new BranchesAndBall(level, true);
                     Console.Write($"The predict index of container is ");
@@ -23,7 +23,7 @@ namespace BranchesAndBalls
                 }
                 else
                 {
-                    Console.WriteLine("Please input a valid number");
+                    Console.WriteLine("Please input a valid number greater or equal 1");
                 }
             }
         }
