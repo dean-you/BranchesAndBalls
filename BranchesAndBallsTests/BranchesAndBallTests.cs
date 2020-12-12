@@ -9,6 +9,14 @@ namespace BranchesAndBalls.Tests
     [TestClass()]
     public class BranchesAndBallTests
     {
+        [TestInitialize()]
+        public void Startup() {
+        }
+
+        [TestCleanup()]
+        public void Cleanup() {
+        }
+
         [TestMethod()]
         public void PredictTest() {
             var system = new BranchesAndBall(4, false);

@@ -27,7 +27,7 @@ namespace BranchesAndBalls
                 var rand = new Random();
                 bGateOpenToLeft = rand.Next(2) == 1;
             }
-            //If not randomise, set to true. So we can the result for unit test
+            //If not randomise, set to true. So we can know the expected result for unit testing
             else
             {
                 bGateOpenToLeft = true;
